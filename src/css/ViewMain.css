@@ -1,0 +1,149 @@
+.banner {
+  margin-top: 100px;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__heading {
+  text-align: center;
+}
+
+.banner__heading-main {
+  font-size: 3.5rem;
+
+}
+
+.banner__heading-small {
+  font-size: 1.5rem;
+}
+
+.point {
+  margin: 50px 0 20px 0;
+}
+
+.point-mar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.point__items {
+  display: flex;
+  padding: 10px 30px;
+  width: 550px;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #7BBFDE;
+}
+
+.point__info__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.point__info__title::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: #007bff71;
+  top: 40px;
+  left: 0;
+}
+
+.point__info__content {
+  text-align: justify;
+}
+.point__items img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.About {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.About__heading {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 50px;
+}
+
+.About__heading p:first-child{
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.About__heading p:nth-child(2){
+  color: #007BFF;
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.About__heading button {
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding: 10px 25px;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 400px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 400px;
+  width: 728px;
+  position: relative;
+}
+
+.slide img {
+
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  80% {margin-left: -1456px;}
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  80% {margin-left: -1456px;}
+}
